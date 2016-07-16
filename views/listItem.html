@@ -1,0 +1,11 @@
+<div ng-controller="SortableController" class="container">
+
+    <ul ui-sortable="sortableOptions" ng-model="list" class="list">
+      <li ng-repeat="item in list" class="item">
+        <div class="myHandle"></div>
+        {{item.text}}
+      </li>
+    </ul>
+
+  <div class="clear"></div>
+</div>
